@@ -23,7 +23,7 @@ export class DoacoesController {
       quantidade,
     }).save();
 
-    console.log(`Doação ID #${doacao.id} criada com sucesso!`);
+    console.log(`Doação ID #${doacao.id} criada com sucesaa!`);
   }
 
   async edit () {
