@@ -1,0 +1,65 @@
+  <!DOCTYPE html>
+  <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <title>Doações</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Doações</h1>
+      <nav>
+        <a href="clientes.html">Clientes</a>
+        <a href="doacoes.html">Doações</a>
+        <button onclick="pesquisarDoacoes(document.getElementById('idDoador').value)">Pesquisar</button>
+      </nav>
+    </header>
+    <main>
+      <section id="clientes">
+        <h2>Clientes</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Nome</th>
+              <th>Telefone</th>
+              <th>Situação</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Lista de clientes aqui -->
+          </tbody>
+        </table>
+        <a href="#form-cliente" onclick="addCliente()">Novo cliente</a>
+        <button onclick="editCliente()">Editar cliente</button>
+        <button onclick="deleteCliente()">Excluir cliente</button>
+      </section>
+      <section id="doacoes">
+        <h2>Doações</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>ID do doador</th>
+              <th>Local da doação</th>
+              <th>Item da doação</th>
+              <th>Quantidade</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Lista de doações aqui -->
+          </tbody>
+        </table>
+        <a href="#form-doacao" onclick="addDoacao()">Nova doação</a>
+        <button onclick="editDoacao()">Editar doação</button>
+        <button onclick="deleteDoacao()">Excluir doação</button>
+      </section>
+    </main>
+    <footer>
+      <p>Copyright &copy; 2023</p>
+    </footer>
+
+    <script src="Scripts.js"></script>
+
+  </body>
+  </html>
